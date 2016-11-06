@@ -3,14 +3,13 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 var app = express();
-
-// Serve static content for the app from the "public" directory in the application directory.
+var PORT = process.env.PORT || 3000;
 app.use(express.static(process.cwd() + '/public'));
 
 app.use(bodyParser.urlencoded({
 	extended: false
 }));
-// override with POST having ?_method=DELETE
+
 app.use(methodOverride('_method'));
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
@@ -21,5 +20,6 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/burger_controllers.js');
 app.use('/', routes);
 
-var port = 3000;
-app.listen(port);
+app.listen(PORT, function(){
+	console.log('App listening on PORT ' + PORT);
+});
