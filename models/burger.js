@@ -14,12 +14,7 @@ var burger = {
 		orm.updateOne(condition, function(res){
 			callback(res);
 		});
-	},
-	// deleteOne: function(condition, callback){
-	// 	orm.deleteOne(condition, function(res){
-	// 		callback(res);
-	// 	});
-	// }
+	}
 };
 
 module.exports = burger;
