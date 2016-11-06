@@ -1,19 +1,20 @@
-.column{
+#col1 li{
 	display:inline;
-	text-align:center;
-}
-li{
+	background: #FAEBD7;
+	color: blue;
 
-	color:blue;
 }
-ul {
-  list-style-type: none;
-}
-.column3{
 
-	float:right;
-}
-#bigburger img{
+
+
+ img #burgpic{
 
 	size:50px;
 }
+
+#col3 li{
+text-decoration: line-through;
+	color:red;
+}
+
+.col3 h2
