@@ -1,7 +1,19 @@
-body{
-	/*background-color: red;*/
+.column{
+	display:inline;
+	text-align:center;
 }
+li{
 
-.jumbotron{
-	margin-top: 5%;
+	color:blue;
+}
+ul {
+  list-style-type: none;
+}
+.column3{
+
+	float:right;
+}
+img #bigburger{
+
+	size:50px;
 }

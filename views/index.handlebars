@@ -4,11 +4,45 @@
 
 
 
-<h1 style text-center>Eat-Dat-Burger!</h1>
+<div class = "container">
+<div class = "row">
+
+<div class ="text-center">
+
+<img id='bigburger' src='./assets/img/burger-cartoon-vector-graphic_1334753008057.jpg'>
+</div>
+<br>
+
+<div class="column">
+<h1 class = "text-center">Eat-Dat-Burger!</h1>
+<h2>Add a burger</h2>
+<form class="create-update-form" action="burgers/create" method="POST">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burger" name="name">    
+  </div>
+
+</div>
+
+<div class ="column">
+ <div class="form-group">
+ <label for="finished"> Is it devoured? </label><br>
+ <input type="radio" name="finished" value="1"> Devoured <br>
+<input type="radio" name="finished" value="0"> Not Devoured<br>
+
+ 
+
+  <button type="submit">Add burger</button>
+</form>
+</div>
+</div>
+
+
 
 <h2>burgers</h2>
 
-<ul>
+<ul class="one">
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>
@@ -23,7 +57,9 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
+<div class ="column3">
 <h2>Devoured Burgers</h2>
 
 <ul>
@@ -42,34 +78,13 @@
   {{/each}}
 </ul>
 </div>
-<h2>Add a burger</h2>
-<form class="create-update-form" action="burgers/create" method="POST">
-
-  <div class="form-group">
-    <label for="burg">burger Name:</label>
-    <input type="text" id="burger" name="burger_name">    
-  </div>
-
- <div class="form-group">
- <label for="finished"> Is it devoured? </label><br>
- <input type="radio" name="finished" value="1"> Devoured <br>
-<input type="radio" name="finished" value="0"> not Devoured<br>
-
- </div>
 
 
 
-  <button type="submit">Add burger</button>
-</form>
+
+
 </div>
-
-
-
-
-
-
-
-
+</div>
 
 
 
