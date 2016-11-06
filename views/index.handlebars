@@ -41,20 +41,27 @@
     {{/if}}
   {{/each}}
 </ul>
-
+</div>
 <h2>Add a burger</h2>
 <form class="create-update-form" action="burgers/create" method="POST">
 
   <div class="form-group">
-    <label for="ca">burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="burg">burger Name:</label>
+    <input type="text" id="burger" name="burger_name">    
   </div>
 
- 
+ <div class="form-group">
+ <label for="finished"> Is it devoured? </label><br>
+ <input type="radio" name="finished" value="1"> Devoured <br>
+<input type="radio" name="finished" value="0"> not Devoured<br>
+
+ </div>
+
+
 
   <button type="submit">Add burger</button>
 </form>
-
+</div>
 
 
 

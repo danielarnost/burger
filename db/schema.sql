@@ -1,21 +1,21 @@
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-	port: 3306,
-	host: 'localhost',
-	user: 'root',
-	password: 'Kyanite@55',
-	database: 'cat_db'
-});
+-- var mysql = require('mysql');
+-- var connection = mysql.createConnection({
+-- 	port: 3306,
+-- 	host: 'localhost',
+-- 	user: 'root',
+-- 	password: 'Kyanite@55',
+-- -- 	database: 'burgers_db'
+-- });
 
-connection.connect(function (err) {
-	if (err) {
-		console.error('error connecting: ' + err.stack);
-		return;
-	}
-	console.log('connected as id ' + connection.threadId);
-});
+-- connection.connect(function (err) {
+-- 	if (err) {
+-- 		console.error('error connecting: ' + err.stack);
+-- 		return;
+-- 	}
+-- 	console.log('connected as id ' + connection.threadId);
+-- });
 
-module.exports = connection;
+-- module.exports = connection;
 CREATE DATABASE burgers_db;
 
 USE burgers_db;
@@ -23,8 +23,8 @@ USE burgers_db;
 CREATE TABLE burgers
 (
 	id int (13) NOT NULL AUTO_INCREMENT,
-	burger_name varchar(255) NOT NULL,
-	devoured BOOLEAN NOT NULL DEFAULT FALSE,
-	date TIMESTAMP,
-	PRIMARY KEY (id)
+	burger_name varchar(55) NOT NULL,
+	devoured BOOLEAN DEFAULT 0,
+	date TIMESTAMP NOT NULL CURRENT_TIMESTAMP ON UPDATE DEFAULT 0,
+	PRIMARY KEY(`id`)
 	);
