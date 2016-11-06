@@ -4,42 +4,17 @@
 
 
 
-<div class = "container">
-<div class = "row">
 
 <div class ="text-center">
 
 <img id='bigburger' src='./assets/img/burger-cartoon-vector-graphic_1334753008057.jpg'>
 </div>
 <br>
-
-<div class="column">
-<h1 class = "text-center">Eat-Dat-Burger!</h1>
-<h2>Add a burger</h2>
-<form class="create-update-form" action="burgers/create" method="POST">
-
-  <div class="form-group">
-    <label for="burg">Burger Name:</label>
-    <input type="text" id="burger" name="name">    
-  </div>
-
-</div>
-
-<div class ="column">
- <div class="form-group">
- <label for="finished"> Is it devoured? </label><br>
- <input type="radio" name="finished" value="1"> Devoured <br>
-<input type="radio" name="finished" value="0"> Not Devoured<br>
-
- 
-
-  <button type="submit">Add burger</button>
-</form>
-</div>
-</div>
+<div class ="container">
+<div class ="row">
 
 
-
+<div class="col-sm-4">
 <h2>burgers</h2>
 
 <ul class="one">
@@ -59,7 +34,29 @@
 </ul>
 </div>
 
-<div class ="column3">
+<div class="col-sm-4">
+
+<h1 class = "text-center">Eat-Dat-Burger!</h1>
+<h2>Add a burger</h2>
+<form class="create-update-form" action="burgers/create" method="POST">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burger" name="name">    
+  </div>
+
+ <div class="form-group">
+ <label for="finished"> Is it devoured? </label><br>
+ <input type="radio" name="finished" value="1"> Devoured <br>
+<input type="radio" name="finished" value="0"> Not Devoured<br>
+
+  <button type="submit">Add burger</button>
+</form>
+
+</div>
+</div>
+
+<div class="col-sm-4" id ="col3">
 <h2>Devoured Burgers</h2>
 
 <ul>
