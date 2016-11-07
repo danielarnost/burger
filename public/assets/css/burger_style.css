@@ -1,20 +1,23 @@
-#col1 li{
-	display:inline;
-	background: #FAEBD7;
+body{
+	font: times sans-serif;
+}
+
+#col1 ul {
+	display:inline-block;
+
 	color: blue;
 
 }
 
-
-
- img #burgpic{
-
-	size:50px;
+#burgpic{
+	height:250px;
+	border:1px solid black;
 }
+
+ 
 
 #col3 li{
 text-decoration: line-through;
 	color:red;
 }
 
-.col3 h2

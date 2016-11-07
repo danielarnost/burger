@@ -29,7 +29,7 @@ router.put('/burgers/update/:id', function(req, res){
 });
 
 router.delete('/burgers/delete/:id', function(req, res){
-	var condition = req.params.id;
+	var condition = req.body.id;
 	burger.deleteOne(condition, function(){
 		res.redirect('/burgers');
 	});

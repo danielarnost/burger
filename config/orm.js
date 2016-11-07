@@ -20,8 +20,16 @@ var orm = {
 		connection.query('UPDATE burgers SET devoured = 1 WHERE id = ?', [condition], function(err, result){
 			if(err) throw err;
 			callback(result);
-})
+			});
+	},
+
+	deleteOne: function(condition, callback){
+		connection.query('DELETE FROM burgers WHERE id = ?', [condition], function(err, result){
+			if(err) throw err;
+			callback(result);
+		});
 	}
+
 
 };
 module.exports = orm;
