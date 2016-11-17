@@ -5,7 +5,7 @@ var express = require('express'),
 router.get('/', function(req, res){
 	res.redirect('/burgers');
 });
-
+//loads specific model
 router.get('/burgers', function(req, res){
 	burger.selectAll(function(data){
 		var mysqlData = {burgers: data};
