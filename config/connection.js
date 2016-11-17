@@ -12,11 +12,11 @@ localhost:{
         port: 3306,
         host: 'enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         user: 'fctrltohm7axdmwp',
-        password: "e4gi3ibn2ih9izoj@enqhzd10cxh7hv2e",
+        password: "e4gi3ibn2ih9izoj",
         database: "k2uvg0tggsovzoex"
 		}
 }
-var connection = mysql.createConnection( source.jawsDB);
+var connection = mysql.createConnection(source.jawsDB);
 
 connection.connect(function (err) {
 	if (err) {
@@ -30,3 +30,4 @@ module.exports = connection;
 
 
 //mysql://OLDUSER:OLDPASS@OLDHOST/OLDDATABASE?…
+//mysql://fctrltohm7axdmwp:e4gi3ibn2ih9izoj@enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/k2uvg0tggsovzoex
