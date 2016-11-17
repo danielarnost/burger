@@ -1,21 +1,21 @@
-// var mysql = require('mysql');
-// var connection = mysql.createConnection({
-// 	port: 3306,
-// 	host: 'localhost',
-// 	user: 'root',
-// 	password: 'Kyanite@55',
-// 	database: 'burgers_db'
-// });
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+	port: 3306,
+	host: 'localhost',
+	user: 'root',
+	password: 'Kyanite@55',
+	database: 'burgers_db'
+});
 
-// connection.connect(function (err) {
-// 	if (err) {
-// 		console.error('error connecting: ' + err.stack);
-// 		return;
-// 	}
-// 	console.log('connected as id ' + connection.threadId);
-// });
+connection.connect(function (err) {
+	if (err) {
+		console.error('error connecting: ' + err.stack);
+		return;
+	}
+	console.log('connected as id ' + connection.threadId);
+});
 
-// module.exports = connection;
+module.exports = connection;
 
 
 
@@ -27,35 +27,35 @@
 
 
 //=========================================================================
-var mysql = require('mysql');
-var source = {
+// var mysql = require('mysql');
+// var source = {
 	
-localhost:{
-	port: 3306,
-	host: 'localhost',
-	user: 'root',
-	password: 'Kyanite@55',
-	database: 'burgers_db'
-			},
- jawsDB: {
-        port: 3306,
-        host: 'enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        user: 'fctrltohm7axdmwp',
-        password: "e4gi3ibn2ih9izoj",
-        database: "k2uvg0tggsovzoex"
-		}
-}
-var connection = mysql.createConnection(source.jawsDB);
+// localhost:{
+// 	port: 3306,
+// 	host: 'localhost',
+// 	user: '',
+// 	password: 'Kyanite@55',
+// 	database: 'burgers_db'
+// 			},
+//  jawsDB: {
+//         port: 3306,
+//         host: 'enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+//         user: 'fctrltohm7axdmwp',
+//         password: "e4gi3ibn2ih9izoj",
+//         database: "k2uvg0tggsovzoex"
+// 		}
+// }
+// var connection = mysql.createConnection(source.jawsDB);
 
-connection.connect(function (err) {
-	if (err) {
-		console.error('error connecting: ' + err.stack);
-		return;
-	}
-	console.log('connected as id ' + connection.threadId);
-});
+// connection.connect(function (err) {
+// 	if (err) {
+// 		console.error('error connecting: ' + err.stack);
+// 		return;
+// 	}
+// 	console.log('connected as id ' + connection.threadId);
+// });
 
-module.exports = connection;
+// module.exports = connection;
 
 
 //mysql://OLDUSER:OLDPASS@OLDHOST/OLDDATABASE?…
